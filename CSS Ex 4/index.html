@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Conceitos avançados</title>
+
+        <style>
+            body {
+                font-size: 2rem;
+            }
+
+            #container {
+                width: 1070px;
+                margin: 0 auto;
+                /*display: flex;*/
+                /*flex-direction: row;*/ /*Todos os elementos numa única linha*/
+                flex-direction: column; /*Todos os elementos numa única coluna*/
+            }
+
+            /*Uso da pseudoclasse :hover*/
+            #link:hover {
+                color: orange;
+            }
+
+            #container-texto {
+                padding: 20px;
+                background-color: orange;
+                border: 30px solid #999;
+                margin-top: 150px;
+            }
+
+            /*Uso do pseudoelemento ::first-line*/
+            #container-texto::first-line {
+                text-transform: uppercase;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>PseudoClasses</h1>
+            <a href="#" id="link">Link</a>
+
+            <h1>PseudoElementos</h1>
+            <p id="container-texto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+        </div>
+    </body>
+</html>
