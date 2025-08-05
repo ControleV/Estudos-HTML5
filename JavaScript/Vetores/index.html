@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <h2>for ... in</h2>
+        <p>Iteração nos elementos de um vetor:</p>
+        <p id="d1"></p>
+
+        <script>
+            const cars1 = ["BMW", "Volvo", "Saab", "Ford"];
+            let text1 = "";
+            for (let x in cars1) {
+                text1 += cars1[x] + " "; // x é o índice no vetor
+            }
+            document.getElementById("d1").innerHTML = text1;
+        </script>
+
+
+        <h2>for ... of</h2>
+        <p>Iteração nos elementos de um vetor:</p>
+        <p id="d1"></p>
+
+        <script>
+            const cars2 = ["BMW", "Volvo", "Saab", "Ford"];
+            let text2 = "";
+            for (let x of cars2) {
+                text2 += cars2[x] + " "; // x é o elemento no vetor
+            }
+            document.getElementById("d1").innerHTML = text2;
+        </script>
+
+        
+        <!--Geração de texto com Join-->
+        <script>
+            const valores = [1,3,4,7,8];
+            const saida = valores.join("::");
+            console.log(saida);
+            // Output: 1 :: 3 :: 4 :: 7 :: 8
+        </script>
+
+
+        <!--Ordenação, mapeamento e redução-->
+        <button onClick="executar()">Clique Aqui!</button>
+        <script>
+            executar = () => {
+                const valores = [1,6,5,9,2];
+                valores.sort();
+                console.log(valores);
+                console.log(`Valor na posição 3: ${valores[3]}`);
+                valores.forEach((element, index) => console.log(`Valor[${index}]:${element}`));
+                const somaDobro = valores.map((e) => e*2).reduce((a,b)=>a+b);
+                console.log("Soma 2x = "+somaDobro);
+            }
+        </script>
+    </body>
+</html>
