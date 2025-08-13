@@ -1,2 +1,2 @@
 # Estudos-HTML5
-Tudo sobre HTML5, CSS ou JavaScript ficará neste repositório
+Tudo que eu aprender sobre HTML5, CSS, JavaScript e PHP, ficará neste repositório!
